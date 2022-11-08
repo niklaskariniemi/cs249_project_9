@@ -1,0 +1,101 @@
+Room Number,Description,Classroom Setup,Capacity
+012-111,"Geology Building, Room 111",Classroom Rows,40
+015-113,"Riles Building, Room 113",Classroom Rows,26
+015-309,"Riles Building, Room 309",Traditional Classroom,30
+016-101,"Communications Building, Room 101",Radio Station Room,35
+016-109,"Communications Building, Room 109",Computer Stations,28
+016-226,"Communications Building, Room 226",Traditional Classroom,45
+016-242,"Communications Building, Room 242",Traditional Classroom,56
+016-244,"Communications Buidling, Room 244",Traditional Classroom,50
+016-246,"Communications Building, Room 246",Traditional Classroom,50
+016-304,"Communications Building, Room 304",Seminar Seating,22
+016-306,"Communications Building, Room 306",Traditional Classroom,25
+017-111,"Science Laboratory, Room 111",Conference Style - Square,20
+017-201,"Science Laboratory, Room 201",Instructional Lab - Wet,16
+017-205,"Science Laboratory, Room 205",Instructional Lab - Wet,16
+017-209,"Science Laboratory, Room 209",Instructional Lab - Wet,18
+017-224,"Science Laboratory, Room 224",Instructional Lab - Wet,20
+018-110,"Liberal Arts Building, Room 110",Conference Style - Square. No Technology,20
+018-111,"Liberal Arts Building, Room 111A",Conference Style - Round,30
+018-207,"Liberal Arts Building, Room 207",Traditional Classroom,25
+018-219,"Liberal Arts Building, Room 219",Traditional Classroom,25
+019-112,"Physical Sciences Building, Room 112",Instructional Lab - Wet,17
+019-313,"Physical Sciences Building, Room 313",Instructional Lab - Dry,24
+019-316,"Physical Sciences Building, Room 316",Instructional Lab - Dry,24
+021-124,"Biological Sciences Building, Room 124",Instructional Lab - Dry,24
+021-256,"Biological Sciences Building, Room 256",Tiered Seating - Fixed,140
+021-265,"Biological Sciences Building, Room 265",Tiered Seating - Fixed,140
+023-103,"Babbitt Academic Annex Building, Room 103",Seminar Seating,25
+023-107,"Babbitt Academic Annex Building, Room 107",Computer Stations,25
+023-109,"Babbitt Academic Annex Building, Room 109",Seminar Seating,25
+023-112,"Babbitt Academic Annex Building, Room 112",Seminar Seating,23
+023-223,"Babbitt Academic Annex Building, Room 223",Seminar Seating,25
+023-226,"Babbitt Academic Annex Building, Room 226b",Seminar Seating,12
+025-1220,"Health & Learning Ctr, Room 1220",Gym,40
+025-1405,"Health & Learning Ctr, Room 1405",Racquetball Court,20
+025-1406,"Health & Learning Ctr, Room 1406",Racquetball Court,20
+025-1414,"Health & Learning Ctr, Room 1414",Gym,60
+025-3105,"Health and Learning Center, Room 3105",Traditional Classroom,36
+025-3106,"Health and Learning Center, Room 3106",Traditional Classroom,36
+025-3109,"Health and Learning Center, Room 3109",Traditional Classroom,36
+025-4103,"Health and Learning Center, Room 4103",Traditional Classroom,33
+025-4105,"Health and Learning Center, Room 4105",Traditional Classroom,34
+025-4106,"Health and Learning Center, Room 4106",Traditional Classroom,36
+025-4110,"Health and Learning Center, Room 4110",Traditional Classroom,42
+026-147,"Adel Mathematics Building, Room 147",Traditional Classroom,46
+026-205,"Adel Mathematics Building, Room 205",Traditional Classroom,40
+027-124,"Eastburn Education Building, Room 124",Traditional Classroom,40
+027-201,"Eastburn Education Building, Room 201",Traditional Classroom,38
+027-204,"Eastburn Education Building, Room 204",Traditional Classroom,40
+027-205,"Eastburn Education Building, Room 205",Traditional Classroom,38
+027-212,"Eastburn Education Building, Room 212",Traditional Classroom,30
+033-108,"HRM - Eugene M. Hughes Building, Room 108",Computer Stations,32
+033-109,"HRM - Eugene M. Hughes Building, Room 109",Traditional Classroom,30
+033-136,"HRM - Eugene M. Hughes Building, Room 136",Tiered Seating,36
+033-141,"HRM - Eugene M. Hughes Building, Room 141",Cooking/Kitchen Workstations,32
+036-212,"Science and Health, Room 212",Large Lecture Hall,65
+036-316,"Science and Health, Room 316",Science Lab Workstations,24
+036-415,"Science and Health, Room 415",Science Lab Workstations,24
+037-113,"Performing and Fine Arts Building, Room 113",Theater - Blackbox,10
+037-115,"Performing and Fine Arts Building, Room 115",Art Area - Workstations,16
+037-144,"Performing and Fine Arts Building, Room 144",Traditional Classroom,20
+037-154,"Performing and Fine Arts Building, Room 154",Piano Stations,30
+037-250,"Performing and Fine Arts Building, Room 250",Music Practice Room,5
+037-318,"Performing and Fine Arts Building, Room 318",Traditional Classroom,30
+043-103,"Gateway Student Success Center, Room 103",Traditional Classroom,30
+047-150,"ROTC Building, Room CLSRM 150",Traditional Classroom,45
+049-006,"ANT Remains Lab (being renovated, so offline 1171)",Teaching Lab,16
+049-007,"Anthropology Lab, Room 007",Instructional Lab - Dry,14
+060-221,"Student Academic Services, Room 221",Classroom Rows,72
+064-030,"duBois Center, Room 030",Traditional Classroom,32
+065-111,"The Raul H. Castro Social & Behavioral Sciences Building, Rm 111",Tiered Seating - Fixed,98
+065-237,"The Raul H. Castro Social & Behavioral Sciences Building, Rm 237",Traditional Classroom,36
+065-325,"The Raul H. Castro Social & Behavioral Sciences Building, Rm 325",Traditional Classroom,54
+066-101,"Health Professions Building, Room 101",Tiered Seating - Fixed,100
+066-120,"Health Professions Building, Room 120",Traditional Classroom,48
+066-126,"Health Professions Building, Room 126",Instructional Lab - Wet,50
+066-216,"Health Professions Building, Room 216",Medical Lab Stations,32
+066-233,"Health Professions Building, Room 233",Traditional Classroom,20
+066-320,"Health Professions Building, Room 320",Classroom Rows,46
+066-321,"Health Professions Building, Room 321",Traditional Classroom,46
+068-103,"Rolle Activity Center, Room 103",Exercise Style,41
+069-111,"Engineering Building, Room 111",Instructional Lab - Wet,12
+069-119,"Engineering Building, Room 119",Instructional Lab - Dry,30
+069-218,"Engineering Building, Room 218",Traditional Classroom,76
+069-314,"Engineering Building, Room 314",Traditional Classroom,40
+069-315,"Engineering Building, Room 315",Computer Stations,15
+069-317,"Engineering Building, Room 317",Computer Stations,33
+070-001,"SBS West Building, Room 001",Instructional Lab - Dry,18
+070-102,"SBS West Building, Room 102",Instructional Lab - Wet,15
+070-110,"SBS West Building, Room 110",Traditional Classroom,75
+070-117,"SBS West Building, Room 117",Computer Stations,25
+070-203,"SBS West Building, Room 203",Tiered Seating - Fixed,24
+081-101,"W. A. Franke College of Business, Room 101",Tiered Seating - Fixed,200
+081-115,"W. A. Franke College of Business, Room 115",Traditional Classroom,30
+081-226,"W. A. Franke College of Business, Room 226",Traditional Classroom,46
+081-334,"W. A. Franke College of Business, Room 334",Traditional Classroom,60
+081-346,"W. A. Franke College of Business, Room 346",Traditional Classroom,60
+081-444,"W. A. Franke College of Business, Room 444",Computer Lab,46
+088-123,"John F. Wettaw Bio/Bio Chemistry Building, Room 123",Instructional Lab - Wet,26
+090-223,"USB, Room 223",Seminar Seating,18
+092-112,"Ponderosa, Room 112",Seminar Seating,6
