@@ -130,8 +130,8 @@ Dependencies: variable options
 */
 AvlTreeNodeType* createTreeNodeFromNode(const AvlTreeNodeType sourceNode)
 {
-    AvlTreeNodeType* tempPtr = (AvlTreeNodeType*)malloc(sizeof(AvlTreeNodeType));
-    return tempPtr;
+    return createTreeNodeFromData(sourceNode.roomNumber,sourceNode.buildingRoom,
+                                 sourceNode.classSetup,sourceNode.roomCapacity);
 }
 
 /*
