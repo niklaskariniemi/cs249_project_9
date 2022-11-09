@@ -353,6 +353,52 @@ Dependencies: createDataNode, compareRoomNumbers, findBalanceFactor,
 AvlTreeNodeType* insert(AvlTreeNodeType* wkgPtr,
     char* rmNmbr, char* bldgRm, char* clsSetup, int capacity)
 {
+    // initialize variables
+
+    // check for working pointer null
+
+        // create and return new node
+
+    // find comparison vlaue
+
+    // check for room number less than current
+
+        // call left recursion, assign to left child pointer
+
+    // otherwise, check for room number greater than current
+
+        // call right recursion, assign to right child pointer
+
+    // otherwise, assume duplicate item found
+
+        // return working pointer - no action
+
+    // find balance factor
+
+    // check for left left case
+
+        // rotate current to the right and return
+
+    // check for right right case
+
+        // displayChars( findTreeHeight( wkgPtr ), SPACE );
+        // printf( "Identified: Right Right Case\n" );
+
+        // rotate current pointer to the left and return
+
+    // check for left right case
+
+        // rotate current pointer's left child to the left
+        // assign to left child
+
+        // rotate current pointer to the right and return
+
+    // check for right left case
+
+        // rotate working pointer's right child to the right
+        // assign to the righ child
+
+    // return pointer to calling function/tree node above where function is called
     return wkgPtr;
 }
 
