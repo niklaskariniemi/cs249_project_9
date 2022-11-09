@@ -491,7 +491,23 @@ Dependencies: printf
 */
 AvlTreeNodeType* rotateRight(AvlTreeNodeType* oldParentPtr)
 {
-    return oldParentPtr;
+    // initialize variables
+    AvlTreeNodeType *tempPtr;
+
+    // print output text
+    printf( "- Rotating Right" );
+
+    // set temp pointer to left child
+    tempPtr = oldParentPtr->leftChildPtr;
+
+    // set right child of left child to old parent
+    oldParentPtr->leftChildPtr->rightChildPtr = oldParentPtr;
+
+    // set left child of old parent to null
+    oldParentPtr->leftChildPtr = NULL;
+
+    // return rotated tree
+    return tempPtr;
 }
 
 /*
