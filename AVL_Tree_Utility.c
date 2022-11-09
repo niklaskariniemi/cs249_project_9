@@ -182,7 +182,7 @@ int findTreeHeight(AvlTreeNodeType* wkgPtr)
     // initialize variables
     int leftHeight, rightHeight, maxHeight;
 
-    // if current pts is not NULL
+    // if current ptr is not NULL
     if ( !isEmpty( wkgPtr ) )
 	{
 	    // get height of left child
