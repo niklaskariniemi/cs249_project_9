@@ -209,7 +209,11 @@ Dependencies: displayChars (recursively)
 */
 void displayChars(int numChars, char outChar)
 {
-
+    if ( numChars != 0 )
+    {
+        printf("%c", outChar );
+        displayChars( numChars - 1, outChar );
+    }
 }
 
 /*
