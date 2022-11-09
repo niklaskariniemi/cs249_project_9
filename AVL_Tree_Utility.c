@@ -251,9 +251,8 @@ Dependencies: inOrderDisplay (recursively)
 void inOrderDisplay(AvlTreeNodeType* wkgPtr)
 {
     // check if current node is not null
-    if ( wkgPtr != NULL )
+    if ( !isEmpty( wkgPtr ) )
     {    
-        printf("1");
         // recurse left
         inOrderDisplay( wkgPtr->leftChildPtr );
 
@@ -262,7 +261,6 @@ void inOrderDisplay(AvlTreeNodeType* wkgPtr)
 
         // recurse right
         inOrderDisplay( wkgPtr->rightChildPtr );
-        printf("2");
     }
     // print new line
     printf("\n");
