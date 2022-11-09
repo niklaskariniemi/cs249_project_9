@@ -51,7 +51,39 @@ Dependencies: isDigit
 */
 int compareRoomNumbers(const char* roomNbrOne, const char* roomNbrTwo)
 {
-    return 1;
+    // initialize variables
+    int diffVal, index = 0;
+
+    // loop until find the shortest string
+    while  ( diffVal == 0 )
+    {
+        // find difference
+        diffVal = roomNbrOne[ index ] - roomNbrTwo[ index ];
+        index++;
+
+        // check for not zero
+        if ( diffVal != 0 )
+        {
+            // return it
+            return diffVal;
+        }
+
+        // check for left is digit
+        if ( isDigit( roomNbrOne[ index ] ) )
+        {
+            // return 1
+            return 1;
+        }
+        // check for right is digit
+        else if ( isDigit( roomNbrTwo[ index ] ) )
+        {
+            // return -1
+            return -1;
+        }
+    }
+
+    // return 0
+    return 0;
 }
 
 /*
