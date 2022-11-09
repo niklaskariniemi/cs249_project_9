@@ -173,31 +173,25 @@ Dependencies: variable options
 int findTreeHeight(AvlTreeNodeType* wkgPtr)
 {
     // initialize variables
-    int leftDepth, rightDepth, finalHeight = 0;
+    int leftHeight, rightHeight, maxHeight;
 
-    // check if there is no tree
-    if (isEmpty(wkgPtr))
-    {
-        // return -1 if there is no tree
-        return -1;
-    }
-    else
-    {
-        // calculate depth of each side
-        leftDepth = findTreeHeight(wkgPtr->leftChildPtr);
-        rightDepth = findTreeHeight(wkgPtr->rightChildPtr);
+    // if current pts is not NULL
+    if ( !isEmpty( wkgPtr ) )
+	{
+	    // get height of left child
+        leftHeight = findTreeHeight( wkgPtr->leftChildPtr );
 
-        // check which side is larger
-        if (leftDepth > rightDepth)
-        {
-            finalHeight = leftDepth + 1;
-        }
-        else
-        {
-            finalHeight = rightDepth + 1;
-        }
-    {
-    return finalHeight;
+	    // get height of right child
+        rightHeight = findTreeHeight( wkgPtr->rightChildPtr );
+
+	    // find max between them
+        maxHeight = findMax( leftHeight, rightHeight );
+
+	    // return max plus one
+        return maxHeight + 1;
+	}
+
+    return -1;
 }
 
 /*
