@@ -229,7 +229,8 @@ Dependencies: variable options
 */
 int findBalanceFactor(AvlTreeNodeType* wkgPtr)
 {
-    return 1;
+    return findTreeHeight( wkgPtr->leftChildPtr ) - 
+                                         findTreeHeight( wkgPtr->rightChildPtr);
 }
 
 /*
