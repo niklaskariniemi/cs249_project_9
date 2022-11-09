@@ -367,7 +367,7 @@ Dependencies: none
 */
 bool isDigit(char testChar)
 {
-    return true;
+    return testChar >= '0' && testChar <= '9';
 }
 
 /*
