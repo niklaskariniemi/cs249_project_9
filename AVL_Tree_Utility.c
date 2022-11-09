@@ -354,52 +354,82 @@ AvlTreeNodeType* insert(AvlTreeNodeType* wkgPtr,
     char* rmNmbr, char* bldgRm, char* clsSetup, int capacity)
 {
     // initialize variables
+    AvlTreeNodeType *newNode;
+    int comparisonVal, balanceFactor;
 
     // check for working pointer null
-
+    if ( isEmpty( wkgPtr ) )
+    {
         // create and return new node
+        newNode = createTreeNodeFromData( rmNmbr, bldgRm, clsSetup, capacity );
+    }
 
-    // find comparison vlaue
+    // find comparison value
+    comparisonVal = compareRoomNumbers( wkgPtr->roomNumber, rmNmbr );
 
     // check for room number less than current
-
+    if ( comparisonVal > 0 )
+    {
         // call left recursion, assign to left child pointer
-
+        wkgPtr->leftChildPtr = insert( wkgPtr->leftChildPtr, 
+           wkgPtr->leftChildPtr->roomNumber, wkgPtr->leftChildPtr->buildingRoom,
+                                           wkgPtr->leftChildPtr->classSetup, 
+                                           wkgPtr->leftChildPtr->roomCapacity );
+    }
     // otherwise, check for room number greater than current
-
+    else if ( comparisonVal < 0 )
+    {
         // call right recursion, assign to right child pointer
-
+        wkgPtr->rightChildPtr = insert( wkgPtr->rightChildPtr, 
+         wkgPtr->rightChildPtr->roomNumber, wkgPtr->rightChildPtr->buildingRoom,
+                                          wkgPtr->rightChildPtr->classSetup,
+                                          wkgPtr->rightChildPtr->roomCapacity );
+    }
     // otherwise, assume duplicate item found
-
-        // return working pointer - no action
-
+    else
+    {
+        // return working pointer
+        return wkgPtr;
+    }
     // find balance factor
+    balanceFactor = findBalanceFactor( wkgPtr );
 
     // check for left left case
-
+    if ( balanceFactor > 1 && rmNmbr < wkgPtr->roomNumber )
+    {
         // rotate current to the right and return
-
+        return rotateRight( wkgPtr );
+    }
     // check for right right case
-
-        // displayChars( findTreeHeight( wkgPtr ), SPACE );
-        // printf( "Identified: Right Right Case\n" );
+    else if ( balanceFactor < -1 && rmNmbr > wkgPtr->roomNumber )
+    {
+        displayChars( findTreeHeight( wkgPtr ), SPACE );
+        printf( "Identified: Right Right Case\n" );
 
         // rotate current pointer to the left and return
-
+        return rotateLeft( wkgPtr );
+    }
     // check for left right case
-
-        // rotate current pointer's left child to the left
-        // assign to left child
+    else if ( balanceFactor > 1 && rmNmbr > wkgPtr->roomNumber )
+    {
+        // rotate current pointer's left child to the left, assign to left child
+        wkgPtr->leftChildPtr = rotateLeft( wkgPtr->leftChildPtr );
 
         // rotate current pointer to the right and return
-
+        return rotateRight( wkgPtr );
+    }
     // check for right left case
-
+    else if ( balanceFactor < -1 && rmNmbr < wkgPtr->roomNumber )
+    {
         // rotate working pointer's right child to the right
         // assign to the righ child
+        wkgPtr->rightChildPtr = rotateRight( wkgPtr->rightChildPtr );
 
-    // return pointer to calling function/tree node above where function is called
-    return wkgPtr;
+        // rotate current pointer to the left and return
+        return rotateLeft( wkgPtr );
+    }
+
+    return newNode;
 }
 
 /*
