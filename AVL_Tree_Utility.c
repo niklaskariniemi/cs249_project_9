@@ -430,5 +430,22 @@ Dependencies: search (recursively)
 */
 AvlTreeNodeType* search(AvlTreeNodeType* wkgPtr, const char* roomNumber)
 {
-    return wkgPtr;
+    // check if null
+    if ( isEmpty( wkgPtr ) )
+    {
+        // return pointer
+        return NULL;
+    }
+    // check if search data is greater
+    if ( compareRoomNumbers( roomNumber, wkgPtr->roomNumber ) > 0 )
+    {
+        // recurse right
+        return search( wkgPtr->rightChildPtr, roomNumber );
+    }
+    // check if search data is smaller
+    else
+    {
+        // recurse left
+        return search( wkgPtr->leftChildPtr, roomNumber );
+    }
 }
