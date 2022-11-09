@@ -123,7 +123,24 @@ Dependencies: variable options
 */
 AvlTreeNodeType* copyTree(AvlTreeNodeType* rootPtr)
 {
-    return rootPtr;
+    // initialize variables
+    AvlTreeNodeType *newNode;
+
+    // check if current node is null
+    if ( isEmpty( rootPtr ) )
+    {
+        // create new node
+        newNode = createTreeNodeFromNode( *rootPtr );
+
+        // set left child
+        copyTree( rootPtr->leftChildPtr );
+
+        // set right child
+        copyTree( rootPtr->rightChildPtr );
+    }
+
+    // return pointer to new node
+    return newNode;
 }
 
 /*
