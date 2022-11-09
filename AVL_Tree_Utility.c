@@ -90,8 +90,22 @@ Dependencies: malloc, sizeof, copyString
 AvlTreeNodeType* createTreeNodeFromData(const char* rmNumber,
     const char* buildingRm, const char* clsSetup, int capacity)
 {
-    AvlTreeNodeType * tempPtr = (AvlTreeNodeType*)malloc(capacity * sizeof(AvlTreeNodeType));;
-    return tempPtr;
+    // dynamically create new node
+    AvlTreeNodeType *newNode = (AvlTreeNodeType *)malloc(
+                                                       sizeof(AvlTreeNodeType));
+
+    // copy data into new node
+    copyString( newNode->roomNumber, rmNumber );
+    copyString( newNode->buildingRoom, buildingRm );
+    copyString( newNode->classSetup, clsSetup );
+    newNode->roomCapacity = capacity;
+
+    // set child pointers to NULL
+    newNode->leftChildPtr = NULL;
+    newNode->rightChildPtr = NULL;
+
+    // return new node
+    return newNode;
 }
 
 /*
@@ -229,7 +243,22 @@ Dependencies: inOrderDisplay (recursively)
 */
 void inOrderDisplay(AvlTreeNodeType* wkgPtr)
 {
+    // check if current node is not null
+    if ( wkgPtr != NULL )
+    {    
+        printf("1");
+        // recurse left
+        inOrderDisplay( wkgPtr->leftChildPtr );
 
+        // print current node
+        printf( "%s, ", wkgPtr->roomNumber );
+
+        // recurse right
+        inOrderDisplay( wkgPtr->rightChildPtr );
+        printf("2");
+    }
+    // print new line
+    printf("\n");
 }
 
 /*
