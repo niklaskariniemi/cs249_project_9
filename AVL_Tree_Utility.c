@@ -156,7 +156,14 @@ Dependencies: none
 */
 int findMax(int one, int other)
 {
-    return 1;
+    if ( one > other )
+    {
+        return one;
+    }
+    else
+    {
+        return other;
+    }
 }
 
 /*
