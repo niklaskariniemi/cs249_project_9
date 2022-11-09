@@ -52,7 +52,14 @@ Dependencies: none
 */
 void copyString(char* dest, const char* source)
 {
-
+    // initialize variables
+    int index;
+    
+    // loop through string
+    for ( index = 0; source[index] != '\0'; index++ )
+    {
+        dest[index] = source[index];
+    }
 }
 
 /*
