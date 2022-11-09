@@ -55,7 +55,8 @@ int compareRoomNumbers(const char* roomNbrOne, const char* roomNbrTwo)
     int diffVal, index = 0;
 
     // loop until find the shortest string
-    while  ( diffVal == 0 )
+    while  ( roomNbrOne[ index ] != NULL_CHAR && 
+                                              roomNbrTwo[ index ] != NULL_CHAR )
     {
         // find difference
         diffVal = roomNbrOne[ index ] - roomNbrTwo[ index ];
