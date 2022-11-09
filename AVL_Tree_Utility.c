@@ -15,6 +15,20 @@ Dependencies: free
 */
 AvlTreeNodeType* clearTree(AvlTreeNodeType* wkgPtr)
 {
+    // check if current node is not null
+    if ( !isEmpty( wkgPtr ) )
+    {    
+        // recurse left
+        clearTree( wkgPtr->leftChildPtr );
+
+        // recurse right
+        clearTree( wkgPtr->rightChildPtr );
+
+        // clear node
+        free( wkgPtr );
+    }
+
+    // return cleared tree ptr
     return wkgPtr;
 }
 
